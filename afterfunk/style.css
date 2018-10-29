@@ -1,0 +1,669 @@
+/*
+Theme Name: After Funk
+Theme URI: https://afterfunk.com
+Description: After Funk Custom Theme
+Author: Spencer Frost
+Author URI: https://frostinnovations.com
+Version: 1.0.0
+Template: twentysixteen
+*/
+@font-face {
+    font-family: 'Oswald-Bold';
+    src: url('fonts/Oswald-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Oswald-Regular';
+    src: url('fonts/Oswald-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Oswald-Light';
+    src: url('fonts/Oswald-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Oswald-Medium';
+    src: url('fonts/Oswald-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Titling';
+    src: url('fonts/Titling.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Titling-Reg';
+    src: url('fonts/Titling-Reg.ttf') format('truetype');
+}
+body:before,
+body:after {
+  display: none !important;
+}
+html,body {
+    min-height: 100%;
+}
+body{
+    width: 100%;
+    /* height: 100%; */
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    background-image: url(https://afterfunk.ca/wp-content/uploads/2018/09/softer-wallpaper.png); 
+    background-repeat:repeat;
+	
+}
+.bgBlueOverlay{
+	background-color: rgba(101, 139, 146, 0.5);
+    min-height: 100%;
+    margin-bottom: auto;
+}
+.bgOrangeOverlay{
+    background-color: rgba(255, 132, 71, 0.5);
+	height: 100%;
+}
+.site {
+    margin: 0 !important;
+    /* height: 100%; */
+	background: none;
+}
+.noBackground{
+    background: none;
+}
+.mainDiv {
+    text-align: center;
+    margin: 0 auto;
+}
+#featuredImage {
+    width: 40%;
+    border-radius: 5px;
+	transition: 0.3s;
+}
+#featuredImage:hover {
+	-moz-box-shadow: 0 0 5px #fff;
+	-webkit-box-shadow: 0 0 5px #fff;
+	box-shadow: 0px 0px 20px #fff;
+}
+.featuredText{
+	color: black;
+	padding: 12px 0;
+	font-family: "Titling-Reg";
+	font-weight:500;
+	letter-spacing: 3px;
+	transition: 0.3s;
+}
+.fab, .far {
+    padding: 5px;
+    font-size: 15px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 50%;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+.fa-spotify {
+    background: #1db954;
+    color: white;
+}
+.fa-instagram {
+    background: #f40083;
+    color: white;
+}
+.fa-itunes-note {
+    background: #00d8f4;
+    color: white;
+}
+.fa-twitter {
+    background: #1da1f2;
+    color: white;
+}
+.fa-envelope {
+    background: #00b489;
+    color: white;
+}
+.social-links-center{
+    margin: 0 auto;
+    text-align: center;
+}
+.social-links-topright{
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    z-index: 3;
+} 
+#socToggle{
+    display: none;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+}
+.white a, .white {
+    color: white;
+	font-family: 'Titling';
+	font-weight: 500;
+	letter-spacing:2px;
+	font-size: 1.2rem;
+}
+.white a:hover, .white:hover {
+    color: rgb(194, 194, 194);
+}
+#landingNav {
+    width: 100%;
+}
+.nav {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+}
+
+li {
+    float: left;
+    margin: 0 20px;
+}
+
+li a {
+    font-family: "Oswald-Regular";
+    display: block;
+    text-align: center;
+    padding: 14px 16px 5px;
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    color: #555;
+}
+.store-nav {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+/* .store-nav ul li {
+    border: 1px solid black;
+} */
+
+.secondary {
+    top: 0;
+    right: 0;
+    left: unset;
+    text-align: unset;
+}
+.secondary #menu-store-nav {
+    float: right;
+}
+#menu-store-nav {
+    list-style-type: none;
+    display: inline-block;
+}
+#menu-store-nav li {
+    box-shadow: 0 1px 0 0 currentColor;
+}
+#menu-store-nav li:hover {
+    box-shadow: 0 1px 0 0 white;
+}
+
+h1{
+    font-family: 'Oswald-Bold';
+    font-size: 3em;
+}
+.socLink .tooltiptext {
+    visibility: hidden;
+    width: 90px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    margin-left: -50px;
+    margin-top: 23px;
+}
+.socLink:hover .tooltiptext {
+    visibility: visible;
+}
+.tnp-email{
+    border: 1px solid #555 !important;
+    height: 35px !important;
+}
+.tnp-submit {
+    margin: 0 auto !important;
+}
+
+.modal {
+    position: absolute;
+    display: block;
+    background-color: rgba(238, 238, 238, 0.6);
+    top: 13%;
+    right: -20%;
+    border: 1.5px solid #111;
+    border-radius: 6px;
+    width: 200px;
+    height: 275px;
+    font-family: "Oswald-Regular";
+    font-size: 15px;
+    text-align: center;
+    padding: 10px 20px;
+    -webkit-animation: slide 1s forwards;
+    -webkit-animation-delay: 1.5s;
+    animation: slide 1s forwards;
+    animation-delay: 1.5s;
+}
+.modal div {
+    margin-top: 12px;
+}
+@-webkit-keyframes slide {
+    100% { right: 7%; }
+}
+@keyframes slide {
+    100% { right: 7%; }
+}
+.fa-times{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+}
+.spotifyFollow {
+    background-color: #1db954;
+    border-radius: 25px;
+    font-family: Verdana, sans-serif;
+    color: white;
+    margin: 10px;
+    padding: 4px 8px;
+    display: block;
+}
+.spotifyFollow .fab {
+    display: inline;
+    margin: 0;
+    padding: 0 2px;
+}
+/* #contactDivs {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    max-width: 100%;
+}
+.contactDiv {
+    display:inline-block;
+    vertical-align: top;
+    margin: 25px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid black;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+} */
+
+#contactDivs {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+.contactDiv {
+    display:inline-block;
+    vertical-align: top;
+    margin: 25px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid black;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+.block {
+    display: block;
+}
+.border {
+    border: 1px solid black;
+    text-align: left;
+    padding: 20px;
+    background: rgba(211, 211, 211, 0.7);
+    -webkit-border-radius: 7.5px;
+    -moz-border-radius: 7.5px;
+    border-radius: 7.5px;
+}
+.custom-nav {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 3;
+}
+.custom-nav ul {
+    list-style-type: none;
+}
+.custom-nav ul li {
+    margin: 0 10px;
+}
+.custom-nav a {
+    padding: 5px;
+}
+
+#tourContainer{
+    height: 73vh; 
+    width: 550px;
+    overflow-y: scroll;
+    margin: 20px auto 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #222;
+
+}
+#tourData{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    overflow-y: scroll;
+}
+.songkick-widget{
+    margin-bottom: 0;
+}
+.site-inner {
+    width: 85%;
+    border-radius: 5px;
+}
+.site-info {
+    display: none;
+}
+.logoDiv {
+    text-align: center;
+    
+}
+.logo {
+    height: 150px !important;
+    margin: 5px auto 0;
+	-webkit-filter: drop-shadow(1px 1px 2px #222);
+	filter: drop-shadow(1px 1px 2px #222);
+}
+.logo:hover {
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+	filter: drop-shadow(5px 5px 5px #222);
+}
+
+.mediaContainer {
+    margin: 0 50px;
+    display: inline;
+}
+.mediaContent {
+	box-shadow: 2px 2px 2px #222;
+}
+.mediaDiv {
+    margin-top: 40px;
+}
+#moreVids {
+    margin-top: 10px; 
+    text-align: center;
+}
+#moreVids a{
+    color:#ccc; 
+    font-family: 'Titling-Reg';
+    letter-spacing: 2px;
+    text-shadow:
+       2px 2px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}#moreVids a:hover{
+    color: #fff
+}
+
+.woocommerce-MyAccount-navigation ul li{
+    width: 80%;
+    list-style-type: none;
+    margin: 0;
+    margin-right: 20%;
+}
+.woocommerce-ordering {
+	display: none;
+}
+.woocommerce-breadcrumb {
+    display: none;
+}
+.woocommerce-message {
+	background: #f7f6f780;
+	margin-top: 20px;
+}
+
+.entry-title{
+    margin-bottom: 10px;
+}
+.whiteBackground {
+    background: white;
+    margin-top: 1.5%;
+    padding-top: 35px;
+}
+
+.site-footer {
+    display: block;
+}
+.footerLogoContainer {
+    display: inline;
+}
+.custom-footer {
+    width: 100%;
+    padding-top: 10px;
+}
+.custom-footer hr {
+    margin: 0 0 5px !important;
+}
+.footerLogo{
+    height: 75px !important;
+    float: right;
+}
+.copyright {
+    color: white;
+	font-family: 'Oswald-Regular';
+}
+.site-main{
+    margin-bottom: 0 !important;
+}
+@media only screen and (max-width: 1240px) {
+    
+    .mediaContent {
+        width: 100%;
+        height: calc(100% - 8px);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .mediaContainer {
+        display: block;
+        position: relative;
+        margin: 20px auto 0;
+        width: 75%;
+        padding-top: 44%;
+    }
+	.footerLogo{
+		height: 53px !important;
+	}
+}
+@media only screen and (max-width: 900px) {
+	.site-footer {
+        padding: 0 5px 45px;
+    }
+    .footerLogoContainer {
+		width: 100%;
+    }
+    .copyright {
+        font-size: .7rem;
+        margin: 0 5px;
+        display: block;
+    }
+    .footerLogo {
+        height: 50px !important;
+        width: 50%;
+		margin: 0 auto;
+        float: left;
+    }
+    .modal {
+        right: -28%;
+    }
+    @-webkit-keyframes slide {
+        100% { right: 10%; }
+    }
+    @keyframes slide {
+        100% { right: 10%; }
+    }
+    #featuredImage {
+        width: 70%;
+    }
+	
+    .custom-nav {
+        position: static;
+        text-align: center;
+        height: 28px;
+        margin: 0;
+    }
+    .menu {
+        margin: 0 auto !important;
+        display: inline-block;
+        /* background: rgba(211, 211, 211, 0.6);
+        border-radius: 25px; */
+        padding: 0 25px;
+    }
+    .social-links-topright {
+        display: none;
+    }
+    .social-links-center {
+        display: block !important;
+        margin: 10px 10px 0;
+    }
+    .site-inner{
+        margin-top: 10px;
+        width: calc(100% - 2px);
+        padding-top: 4  0px;
+    }
+    textarea {
+        font-size: 12px;
+    }
+    .store-nav {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .store-nav ul li {
+        font-size: .85rem;
+        line-height: 13px;
+        margin: 0 10px;
+    }
+	
+}
+@media only screen and (max-width: 600px) {
+    .spotifyDiv{
+        padding-top: 75%;
+    }
+    .youtubeDiv{
+        padding-top: 52%;
+    }
+    .mediaContainer{
+        width: 90%;
+    }
+    .mediaDiv{
+        margin-top: 15px;
+    }
+    #moreVids {
+        padding-top: 10px;
+    }
+    .logo {
+        height: 100px !important;
+    }
+    #tourContainer{
+        margin-top: 20px;
+        height: 78vh; 
+        width: 90%;
+        overflow-y: scroll;
+        margin: 0 auto;
+    }
+    #tourData{
+        width: 100%;
+        height: 150vh;
+        margin: 0;
+    }
+    .fab, .far {
+        font-size: 13px;
+        width: 30px;
+    }
+    .site-inner{
+        /* height: 100vh; */
+    }
+}
+@media only screen and (max-width: 490px) {
+	.footerLogo {
+        height: 40px !important;
+		float: left;
+	}
+    #tourContainer{
+        margin-top: 20px;
+        height: 60vh; 
+        width: 100%;
+        overflow-y: scroll;
+        margin: 0 auto;
+        border-top: 1px solid black;
+        /* display: none; */
+    }
+    #tourData{
+        width: 100%;
+        /* height: 500vh; */
+        margin: 0;
+    }
+    .fab, .far {
+        font-size: 13px;
+        width: 30px;
+    }
+    iframe {
+        border: none;
+    }
+    .modal {
+        position: relative;
+        display: block;
+        top: unset;
+        bottom: unset;
+        right: unset;
+        left: unset;
+        margin: 7% auto 0;
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+        width: 80%;
+        border: 1px solid black;
+    }
+    #landingNav {
+        width: 100%;
+        height: 40px;
+    }
+    .nav li {
+        width: calc(19% - 32px);
+    }
+    .store-nav {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .store-nav ul li {
+        font-size: .75rem;
+        line-height: 12px;
+        margin: 0;
+    }
+    .contactDiv {
+        font-size: .85rem;
+    }
+
+    
+}
+@media only screen and (max-width: 400px) {
+    .socLink {
+        width: 27px;
+    }
+}
